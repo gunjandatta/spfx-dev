@@ -1,0 +1,27 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "dev-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/dev/DevWebPart.js",
+          "manifest": "./src/webparts/dev/DevWebPart.manifest.json"
+        }
+      ]
+    },
+    "blank-web-part-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/blankWebPart/BlankWebPartWebPart.js",
+          "manifest": "./src/webparts/blankWebPart/BlankWebPartWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "DevWebPartStrings": "lib/webparts/dev/loc/{locale}.js",
+    "BlankWebPartWebPartStrings": "lib/webparts/blankWebPart/loc/{locale}.js"
+  }
+}
