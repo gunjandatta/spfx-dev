@@ -87,11 +87,7 @@ export default class DevWebPart extends BaseClientSideWebPart<IDevWebPartProps> 
     // Render a panel
     let panel = Fabric.Panel({
       el: this.el.children[0],
-      headerText: "My Panel",
-      panelContent: [
-        "<h1>Office Fabric-JS Framework</h1>",
-        "<p>This panel component was created using the JavaScript framework.</p>"
-      ].join('\n')
+      headerText: "My Panel"
     });
 
     // Render a button
@@ -100,7 +96,10 @@ export default class DevWebPart extends BaseClientSideWebPart<IDevWebPartProps> 
       text: "Show Panel",
       onClick: () => {
         // Display the panel
-        panel.show();
+        panel.show([
+          '<h1>Office Fabric-JS Framework</h1>',
+          '<p>This panel component was created using the JavaScript framework.</p>'
+        ].join('\n'));
       }
     });
   }
