@@ -33,7 +33,7 @@ export default class DevWebPart extends BaseClientSideWebPart<IDevWebPartProps> 
           <div class="${ styles.row}">
             <div class="${ styles.column}">
               <span class="${ styles.title}">Dev Playground</span>
-              <p>"${ this.properties.description}"</p>
+              <p>${ this.properties.description}</p>
               <div id="main"></div>
             </div>
           </div>
